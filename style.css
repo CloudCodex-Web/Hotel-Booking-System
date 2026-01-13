@@ -1,0 +1,507 @@
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Navbar */
+ .navbar {
+     background-color: #800020;
+     overflow: hidden;
+     padding: 10px;
+     position: fixed;
+     width: 100%;
+     z-index: 1000;
+ }
+
+ .navbar .logo {
+     float: left;
+     color: white;
+     font-size: 28px;
+     font-weight: bold;
+     padding: 10px 20px;
+ }
+
+ .navbar .nav-links {
+     float: left;
+     margin-left: 50px;
+ }
+
+ .navbar .nav-links a {
+     float: left;
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 20px;
+     text-decoration: none;
+     font-weight: 500;
+ }
+
+ .navbar .right {
+     float: right;
+ }
+
+ .navbar .nav-links a:hover,
+ .navbar .right a:hover {
+     background-color: #960323;
+ }
+
+ #rooms h2 {
+     text-align: center;
+     color: #800020;
+
+ }
+
+ /* Hero Banner - Full Screen */
+ .hero {
+     background-image: url('img/image.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     text-align: center;
+     flex-direction: column;
+ }
+
+ .hero h1 {
+     font-size: 60px;
+     margin: 0;
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+ }
+
+ .hero p {
+     font-size: 24px;
+     margin-top: 20px;
+     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+ }
+
+ /* Book Now Button */
+ .hero .btn {
+     margin-top: 30px;
+     padding: 15px 30px;
+     font-size: 20px;
+     color: white;
+     background-color: #800020;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     text-decoration: none;
+     transition: background-color 0.3s;
+ }
+
+ .hero .btn:hover {
+     background-color: #800020;
+
+ }
+
+ /* Booking Section */
+ #booking {
+     padding: 60px 20px;
+     background-color: #f2f2f2;
+ }
+
+ #booking h1 {
+     text-align: center;
+     margin-bottom: 30px;
+     color: #800020;
+ }
+
+ #booking h1::after {
+     content: '';
+     display: block;
+     width: 130px;
+     height: 4px;
+     background-color: #800020;
+     margin: 10px auto 0;
+     border-radius: 2px;
+ }
+
+ /* Booking Form */
+ .booking-form {
+     max-width: 600px;
+     margin: 0 auto;
+     background-color: white;
+     padding: 30px;
+     color: blue;
+     border-radius: 10px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .booking-form label {
+     display: block;
+     margin-bottom: 8px;
+     font-weight: bold;
+ }
+
+ .booking-form input,
+ .booking-form select,
+ .booking-form textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     font-size: 16px;
+ }
+
+ .booking-form textarea {
+     resize: vertical;
+     height: 100px;
+ }
+
+ .booking-form button {
+     background-color: #004080;
+     color: white;
+     border: none;
+     padding: 15px 25px;
+     font-size: 15px;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+ .booking-form button:hover {
+     background-color: #0073e6;
+ }
+
+ /* Rooms Section */
+ .rooms-section {
+     width: 90%;
+     margin: auto;
+     text-align: center;
+     padding: 20px;
+ }
+
+ /* Section Heading */
+ .rooms-section h2 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 28px;
+     margin-bottom: 30px;
+     color: #333;
+ }
+ .rooms-section h2::after {
+     content: '';
+     display: block;
+     width: 100px;
+     height: 4px;
+     background-color: #800020;
+     margin: 10px auto 0;
+     border-radius: 2px;
+ }
+ /* Rooms Section */
+ .rooms-section {
+     padding: 80px 40px;
+     text-align: center;
+ }
+
+
+ /* Rooms Container */
+ .rooms-container {
+     max-width: 1200px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     gap: 30px;
+ }
+
+ /* Room Card */
+ .room-card {
+     background: #ffffff;
+     border-radius: 14px;
+     overflow: hidden;
+     position: relative;
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+ }
+
+ .room-card img {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+     transition: transform 0.5s ease;
+ }
+
+ .room-card h3 {
+     font-size: 20px;
+     color: #800020;
+     margin: 15px 0 5px;
+ }
+
+ .room-card p {
+     font-size: 14px;
+     color: #475569;
+     padding: 0 15px 20px;
+     line-height: 1.6;
+ }
+
+ /* Price Tag */
+ .price-tag {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     background-color: #800020;
+     color: #ffffff;
+     padding: 6px 14px;
+     font-size: 14px;
+     font-weight: bold;
+     border-radius: 20px;
+     z-index: 2;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+ }
+
+ /* Hover Effects */
+ .room-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+ }
+
+ .room-card:hover img {
+     transform: scale(1.1);
+ }
+
+ .room-card:hover .price-tag {
+     background-color: #a0002a;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+     .rooms-section h2 {
+         font-size: 30px;
+     }
+ }
+
+
+ /* Services Section */
+ .services {
+     padding: 80px 20px;
+     text-align: center;
+ }
+
+ .services h1 {
+     font-size: 36px;
+     color: #800020;
+     margin-bottom: 10px;
+ }
+ .services h1::after {
+     content: '';
+     display: block;
+     width: 130px;
+     height: 4px;
+     background-color: #800020;
+     margin: 10px auto 0;
+     border-radius: 2px;
+ }
+ .service-desc {
+     font-size: 18px;
+     color: #333;
+     margin-bottom: 50px;
+ }
+
+ /* Service Container */
+ .service-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 25px;
+
+ }
+
+ /* Service Box */
+ .service-box {
+     background: #ffffff;
+     width: 280px;
+     padding: 30px 20px;
+     border-radius: 50px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .service-box h2 {
+     font-size: 20px;
+     color: #2563EB;
+     margin-bottom: 15px;
+ }
+
+ .service-box p {
+     font-size: 14px;
+     color: #334155;
+     line-height: 1.6;
+ }
+
+ /* Hover Effect */
+ .service-box:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+     .services h1 {
+         font-size: 30px;
+     }
+
+     .service-box {
+         width: 100%;
+         max-width: 350px;
+     }
+ }
+ /* =========================
+   CONTACT SECTION
+========================= */
+ .contact-section {
+     padding: 80px 60px;
+     background-color: #f8fafc;
+ }
+
+ .contact-container {
+     max-width: 1100px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 50px;
+     background: #ffffff;
+     padding: 50px;
+     border-radius: 12px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+ }
+
+ /* Contact Info */
+ .contact-info h2 {
+     font-size: 32px;
+     margin-bottom: 15px;
+     color: #800020;
+ }
+ .contact-info h2::after {
+     content: '';
+     display: block;
+     width: 100px;
+     height: 4px;
+     background-color: #800020;
+     margin: 10px 0 20px;
+     border-radius: 2px;
+ }
+ .contact-info p {
+     font-size: 16px;
+     color: #475569;
+     margin-bottom: 25px;
+     line-height: 1.6;
+ }
+
+ .contact-info ul {
+     list-style: none;
+ }
+
+ .contact-info li {
+     font-size: 16px;
+     margin-bottom: 12px;
+     color: #1e293b;
+ }
+
+ /* Contact Form */
+ .contact-form .form-group {
+     margin-bottom: 15px;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     width: 100%;
+     padding: 14px 16px;
+     border: 1px solid #cbd5e1;
+     border-radius: 8px;
+     font-size: 15px;
+     outline: none;
+ }
+
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+     border-color: #0ea5e9;
+ }
+
+ /* Submit Button */
+ .btn-submit {
+     width: 100%;
+     padding: 14px;
+     background-color: #0ea5e9;
+     color: #ffffff;
+     border: none;
+     border-radius: 8px;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s ease;
+ }
+
+ .btn-submit:hover {
+     background-color: #0284c7;
+ }
+
+ /* =========================
+   RESPONSIVE
+========================= */
+ @media (max-width: 768px) {
+     .contact-container {
+         grid-template-columns: 1fr;
+         padding: 30px;
+     }
+
+     .contact-section {
+         padding: 60px 20px;
+     }
+ }
+ /* Thank You Section */
+ .thank-you-section {
+     min-height: calc(100vh - 70px);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #F8FAFC;
+     padding: 40px;
+ }
+
+ .thank-you-box {
+     background: #ffffff;
+     padding: 50px 40px;
+     text-align: center;
+     border-radius: 16px;
+     max-width: 500px;
+     width: 100%;
+     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+ }
+
+ .thank-you-box h1 {
+     font-size: 36px;
+     color: #800020;
+     margin-bottom: 15px;
+ }
+
+ .thank-you-box p {
+     font-size: 16px;
+     color: #475569;
+     margin-bottom: 10px;
+ }
+
+ .btn {
+     display: inline-block;
+     margin: 15px 10px 0;
+     padding: 12px 25px;
+     background-color: #800020;
+     color: #ffffff;
+     text-decoration: none;
+     border-radius: 25px;
+     font-size: 14px;
+     transition: background 0.3s ease;
+ }
+
+ .btn:hover {
+     background-color: #a0002a;
+ }
+
+ .btn.secondary {
+     background-color: #2563EB;
+ }
+
+ .btn.secondary:hover {
+     background-color: #1e40af;
+ }
