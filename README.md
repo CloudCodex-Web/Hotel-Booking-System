@@ -1,6 +1,5 @@
 🏨 Hotel Booking Website
 
-
 📌 Project Overview
 
 This project is a Hotel Booking Website developed using only HTML and CSS.
